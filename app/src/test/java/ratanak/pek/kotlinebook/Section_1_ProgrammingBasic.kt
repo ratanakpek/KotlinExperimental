@@ -2,12 +2,22 @@ package ratanak.pek.kotlinebook
 
 import org.junit.Test
 
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * See [testing documentation](http://d.android.com/tools/testing).
- */
-class KotlinAtomChapterOne {
+
+class Section_1_ProgrammingBasic {
+
+    @Test
+    fun `Function Test`() {
+
+    }
+
+    //block body
+    fun sayHello() {
+        println("Hallo!")
+    }
+
+    // expression body
+    fun multiplyByThree(x: Int): Int = x * 3
+
     @Test
     fun `triple-quoted test`() {
         val lines: String = """Triple quotes let
