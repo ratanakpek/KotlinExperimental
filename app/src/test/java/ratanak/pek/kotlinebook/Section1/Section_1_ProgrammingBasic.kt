@@ -5,6 +5,30 @@ import org.junit.Test
 
 class Section_1_ProgrammingBasic {
 
+
+    @Test
+    fun `Assignment operators same`() {
+        var x = 6
+        //++x  they are same
+        x++
+        assert(x == 7)
+    }
+
+    @Test
+    fun `Assignment operators same too`() {
+        var x = 6
+        assert(++x == 7)
+    }
+
+    @Test
+    fun `Assignment operators different`() {
+        var x = 6
+        assert(x++ != 7)
+    }
+
+
+    ///////////////////////////////////
+
     @Test
     fun `prevent integer overflow`() {
         val i = Int.MAX_VALUE
@@ -77,3 +101,4 @@ in your string"""
         println(lines)
     }
 }
+
